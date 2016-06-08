@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0;" name="viewport" />
+    <meta content="yes" name="apple-mobile-web-app-capable" />
+    <meta content="black" name="apple-mobile-web-app-status-bar-style" />
+    <meta content="telephone=no" name="format-detection" />
+    <link  rel="stylesheet" href="css/base.css"/>
+    <link rel="stylesheet" href="css/weui.min.css"/>
+    <link rel="stylesheet" href="css/index.css"/>
+    <title>支付</title>
+</head>
+<body>
+        <header>
+            <nav>
+                <ul class="nav_wp">
+                    <li>
+                        <i class="nav_icon"></i>
+                        <a href="">首页</a>
+                    </li>
+                    <li>
+                        <i class="nav_icon"></i>
+                        <a href="">测算师</a>
+                    </li>
+                    <li>
+                        <i class="nav_icon"></i>
+                        <a href="">解卦</a>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+        <section>
+                    <div class="pay_main main">
+                            <div class="pay_title">
+                                    <h2>支付情况</h2>
+                                    <div class="weui_cells">
+                                        <div class="weui_cell">
+                                            <div class="weui_cell_hd">
+                                                <div class="weui_label">
+                                                    预测费用
+                                                </div>
+                                            </div>
+                                            <div class="weui_cell_bd weui_cell_primary">
+                                                100元
+                                            </div>
+                                        </div>
+                                    </div>
+                                <div class="weui_cells">
+                                    <div class="weui_cell">
+                                        <div class="weui_cell_hd">
+                                            <div class="weui_label">
+                                                代金券
+                                            </div>
+                                        </div>
+                                        <div class="weui_cell_bd weui_cell_primary">
+                                            无法使用
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="weui_cells">
+                                    <div class="weui_cell">
+                                        <div class="weui_cell_hd">
+                                            <div class="weui_label">
+                                                合计
+                                            </div>
+                                        </div>
+                                        <div class="weui_cell_bd weui_cell_primary">
+                                            100元
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="pay_bd">
+                                <h2>支付方式</h2>
+                                <div class="weui_cells weui_cells_checkbox">
+                                    <label class="weui_cell weui_check_label" for="weixin">
+                                        <div class="weui_cell_bd  weixin_pay">
+                                            <input type="radio" class="weui_check" name="payMethod" id="weixin" checked="checked">
+                                            <i class="weui_icon_checked"></i>
+                                        </div>
+                                    </label>
+                                    <label class="weui_cell weui_check_label" for="alipay">
+                                        <div class="weui_cell_bd  ali_pay">
+                                            <input type="radio" class="weui_check" name="payMethod" id="alipay" >
+                                            <i class="weui_icon_checked"></i>
+                                        </div>
+                                    </label>
+                                </div>
+                            </div>
+                           <a href="javascript:;" class="weui_btn weui_btn_primary">支付</a>
+                    </div>
+        </section>
+</body>
+</html>

@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0;" name="viewport" />
+    <meta content="yes" name="apple-mobile-web-app-capable" />
+    <meta content="black" name="apple-mobile-web-app-status-bar-style" />
+    <meta content="telephone=no" name="format-detection" />
+    <link  rel="stylesheet" href="css/base.css"/>
+    <link rel="stylesheet" href="css/weui.min.css"/>
+    <link rel="stylesheet" href="css/index.css"/>
+    <title>输入家庭人员信息</title>
+</head>
+<body>
+        <header>
+            <nav>
+                <ul class="nav_wp">
+                    <li>
+                        <i class="nav_icon"></i>
+                        <a href="">首页</a>
+                    </li>
+                    <li>
+                        <i class="nav_icon"></i>
+                        <a href="">测算师</a>
+                    </li>
+                    <li>
+                        <i class="nav_icon"></i>
+                        <a href="">解卦</a>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+        <section>
+                    <div class=" main info_main">
+                        <div class="title">
+                            <div class="weui_cells">
+                                <div class="weui_cell">
+                                    <div class="weui_cell_bd weui_cell_primary ">
+                                        与您的关系
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="family_wp">
+                            <div class="weui_cell">
+                                <label class="weui_cell_primary weui_cells_checkbox" for="father">
+                                    <input type="radio" class="weui_check" name="family" id="father" checked="checked">
+                                    <i class="weui_icon_checked"></i>
+                                    父亲
+                                </label>
+                                <label class="weui_cell_primary  weui_cells_checkbox" for="mother">
+                                    <input type="radio" class="weui_check" name="family" id="mother">
+                                    <i class="weui_icon_checked"></i>
+                                    母亲
+                                </label>
+                                <label class="weui_cell_primary  weui_cells_checkbox" for="wife">
+                                    <input type="radio" class="weui_check" name="family" id="wife">
+                                    <i class="weui_icon_checked"></i>
+                                    爱人
+                                </label>
+                            </div>
+                        </div>
+                        <div class="title">
+                            <div class="weui_cells">
+                                <div class="weui_cell">
+                                    <div class="weui_cell_bd weui_cell_primary ">
+                                        他/她的出生日期
+                                    </div>
+                                    <div class="weui_cell_ft  weui_cell_primary">
+                                        <input type="radio" class="weui_check"  name="calendar" id="lunar" checked="checked" />
+                                        <label class="calendar_wp" for="lunar">
+                                            阴历
+                                        </label>
+                                        <input type="radio" class="weui_check"  name="calendar"  id="solar"/>
+                                        <label class="calendar_wp" for="solar">
+                                            阳历
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="birthday_wp">
+                            <ul class="birthday_ymd">
+                                <li>
+                                    <input  type="text"/>
+                                    <span>年</span>
+                                </li>
+                                <li>
+                                    <input type="text"/>
+                                    <span>月</span>
+                                </li>
+                                <li>
+                                    <input type="text"/>
+                                    <span>日</span>
+                                </li>
+                            </ul>
+                            <div class="weui_cell weui_cells_checkbox">
+                                <label class="weui_cell_hd" for="time_sure">
+                                    <input type="radio" class="weui_check" id="time_sure" name="time_method" checked="checked">
+                                    <i class="weui_icon_checked"></i>
+                                </label>
+                                <div class="weui_cell_bd weui_cell_primary">
+                                    <input id="time" type="text" placeholder="选择出生的时间段"/>
+                                </div>
+                            </div>
+                            <label class="weui_cell weui_cells_checkbox" for="other">
+                                <div class="weui_cell_hd  weixin_pay">
+                                    <input type="radio" class="weui_check" name="time_method" id="other">
+                                    <i class="weui_icon_checked"></i>
+                                </div>
+                                <div class="weui_cell_bd weui_cell_primary">
+                                    如不清楚具体出生时间，请选择此项
+                                </div>
+                            </label>
+                        </div>
+
+                        <div class="title">
+                            <div class="weui_cells">
+                                <div class="weui_cell">
+                                    <div class="weui_cell_bd weui_cell_primary ">
+                                        他/她的出生地点
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="area_wp">
+                            <ul class="birthday_area">
+                                <li>
+                                    <input  type="text"/>
+                                    <span>省</span>
+                                </li>
+                                <li>
+                                    <input type="text"/>
+                                    <span>市</span>
+                                </li>
+                                <li>
+                                    <input type="text"/>
+                                    <span>县</span>
+                                </li>
+                            </ul>
+                        </div>
+                        <a href="javascript:;" class="weui_btn weui_btn_primary">起卦</a>
+                    </div>
+        </section>
+</body>
+</html>

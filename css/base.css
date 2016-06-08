@@ -1,0 +1,84 @@
+@charset "utf-8";
+/* 禁用iPhone中Safari的字号自动调整 */
+html {
+    -webkit-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%;
+}
+/* 去除iPhone中默认的input样式 */
+input[type="submit"],
+
+input[type="reset"],
+
+input[type="button"],
+
+input{-webkit-appearance:none; resize: none;}
+/* 取消链接高亮  */
+body,div,ul,li,ol,h1,h2,h3,h4,h5,h6,input,textarea,select,p,dl,dt,dd,a,img,button,form,table,th,tr,td,tbody,article,
+aside, details,figcaption,figure,footer,header,hgroup, menu,nav,section{ -webkit-tap-highlight-color:rgba(0, 0, 0, 0); }
+/* 设置HTML5元素为块 */
+article, aside, details,figcaption,figure,footer,header,hgroup, menu,nav,section {
+    display: block;
+}
+/* 图片自适应 */
+img {
+    max-width: 100%;
+    height: auto;
+   display: block;
+}
+/* 初始化 */
+body,div,ul,li,ol,h1,h2,h3,h4,h5,h6,input,textarea,select,p,dl,dt,dd,a,img,button,form,table,th,tr,td,tbody,article,
+aside, details,figcaption,figure,footer,header,hgroup, menu,nav,section{margin:0; padding:0; border:none;}
+body{font-family:Microsoft YaHei,Tahoma,Arial,sans-serif; color:#000; background-color:#212832;}
+strong{font-weight: normal;}
+.clearfix:after{content:""; display:block; visibility:hidden; height:0; clear:both;}
+.clearfix{zoom:1;}
+a{text-decoration:none; color:#969696; font-family: Microsoft YaHei,Tahoma,Arial,sans-serif;}
+a:hover{color:#FED503; text-decoration:none;}
+ul,ol{list-style:none;}
+h1, h2, h3, h4, h5, h6{ font-size:100%; font-family: Microsoft YaHei;}
+img{border: none;}
+.pr{position: relative;}
+.pa{position: absolute;}
+.txtR{text-align: right;}
+.txtL{text-align: left;}
+.color1{background-color:#ff0101;color:#fff;}
+.color2{background-color:#7ecef4;color:#fff;}
+.color3{background-color:#70c700;color:#fff;}
+.color4{background-color:#ffaf35;color:#fff;}
+.color5{background-color:#c490bf;color:#fff;}
+.color6{background-color:#ff876f;color:#fff;}
+
+/* 三档文字大小 */
+@media screen and (min-width:100px){ /*  iPhone 4,5 */
+    html{ font-size: 10px;}
+}
+@media screen and (min-width:320px){ /*  iPhone 4,5 */
+    html{ font-size: 10px;}
+}
+@media screen and (min-width:375px){ /*  iPhone 6 */
+    html{ font-size: 12px;}
+}
+@media screen and (min-width:414px){  /*  iPhone 6 plus */
+    html{ font-size: 12px;}
+}
+@media screen and (min-width:600px){
+    html{ font-size:14px;}
+}
+/*头部*/
+header{margin-bottom:12px;height: 60px;text-align: center;}
+.nav_wp{display: -webkit-box;display: -webkit-flex;display: flex;-webkit-flex-flow: row wrap;flex-flow: row wrap;-webkit-align-items: flex-end;
+    align-items: flex-end;-webkit-justify-content: center;justify-content: center;height:60px;font-size:1.5rem;}
+.nav_wp li{flex: 1;}
+.nav_wp li a{color:#fff;}
+.nav_wp li .nav_icon{width:21px;height:18px;margin:0 auto;display:block;background:url("../img/icon_bg_1.png") no-repeat center;-webkit-background-size: 83px auto;background-size: 83px auto;}
+.nav_wp li:nth-child(1)  .nav_icon{background-position: 0 0;}
+.nav_wp li:nth-child(2)  .nav_icon{background-position: -26px 0;}
+.nav_wp li:nth-child(3)  .nav_icon{background-position: -62px  0;}
+.footer{width:95%;margin:0 auto;    padding-top: 37px;background-color: #fff;}
+/* 按钮 */
+.weui_btn.weui_btn_primary{background:#ffa800;color:#fff;}
+.weui_btn.weui_btn_primary:not(.weui_btn_disabled):active{background:#F38A04;color:#fff;}
+
+
+
+
